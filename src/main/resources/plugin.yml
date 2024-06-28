@@ -1,10 +1,10 @@
-name: extraUtils
+name: Arcane
 version: '${project.version}'
-main: com.velocitypowered.extrautils.ExtraUtils
+main: com.velocitypowered.arcane.Arcane
 api-version: '1.20'
 load: STARTUP
 author: def1de
 
 commands:
   extrautils:
-    description: Extrautils main command
+    description: Arcane main command

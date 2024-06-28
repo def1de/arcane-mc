@@ -1,7 +1,7 @@
-package com.velocitypowered.extrautils;
+package com.velocitypowered.arcane;
 
-import com.velocitypowered.extrautils.collections.Armor;
-import com.velocitypowered.extrautils.collections.Weapons;
+import com.velocitypowered.arcane.collections.Armor;
+import com.velocitypowered.arcane.collections.Weapons;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

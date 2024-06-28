@@ -1,14 +1,14 @@
-package com.velocitypowered.extrautils;
+package com.velocitypowered.arcane;
 
-import com.velocitypowered.extrautils.collections.Weapons;
-import com.velocitypowered.extrautils.collections.Armor;
+import com.velocitypowered.arcane.collections.Weapons;
+import com.velocitypowered.arcane.collections.Armor;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.logging.Logger;
 
 @SuppressWarnings("ALL")
-public final class ExtraUtils extends JavaPlugin {
+public final class Arcane extends JavaPlugin {
     Logger logger = getLogger();
     @Override
     public void onEnable() {
@@ -29,11 +29,11 @@ public final class ExtraUtils extends JavaPlugin {
 
         new tickListener(this).start();
 
-        logger.info("ExtraUtils has been enabled!");
+        logger.info("Arcane has been enabled!");
     }
 
     @Override
     public void onDisable() {
-        logger.info("ExtraUtils has shut down");
+        logger.info("Arcane has shut down");
     }
 }

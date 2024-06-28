@@ -1,8 +1,8 @@
-package com.velocitypowered.extrautils.collections;
+package com.velocitypowered.arcane.collections;
 
-import com.velocitypowered.extrautils.weapons.aotvItem;
-import com.velocitypowered.extrautils.weapons.meteoStaffItem;
-import com.velocitypowered.extrautils.weapons.bookOfHealsItem;
+import com.velocitypowered.arcane.weapons.aotvItem;
+import com.velocitypowered.arcane.weapons.meteoStaffItem;
+import com.velocitypowered.arcane.weapons.bookOfHealsItem;
 
 import java.util.function.Consumer;
 

@@ -1,4 +1,4 @@
-package com.velocitypowered.extrautils;
+package com.velocitypowered.arcane;
 
 import org.bukkit.attribute.Attribute;
 import org.bukkit.entity.Player;

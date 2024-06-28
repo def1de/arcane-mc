@@ -1,8 +1,8 @@
-package com.velocitypowered.extrautils.weapons;
+package com.velocitypowered.arcane.weapons;
 
-import com.velocitypowered.extrautils.Utilities;
-import com.velocitypowered.extrautils.playerController;
-import com.velocitypowered.extrautils.playerStats;
+import com.velocitypowered.arcane.Utilities;
+import com.velocitypowered.arcane.playerController;
+import com.velocitypowered.arcane.playerStats;
 
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.Style;

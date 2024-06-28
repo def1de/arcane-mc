@@ -1,6 +1,6 @@
-package com.velocitypowered.extrautils.weapons;
+package com.velocitypowered.arcane.weapons;
 
-import com.velocitypowered.extrautils.Utilities;
+import com.velocitypowered.arcane.Utilities;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.Style;
 import net.kyori.adventure.text.format.TextDecoration;

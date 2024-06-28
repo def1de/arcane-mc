@@ -1,9 +1,9 @@
-package com.velocitypowered.extrautils.weapons;
+package com.velocitypowered.arcane.weapons;
 
-import com.velocitypowered.extrautils.ExtraUtils;
-import com.velocitypowered.extrautils.Utilities;
-import com.velocitypowered.extrautils.playerController;
-import com.velocitypowered.extrautils.playerStats;
+import com.velocitypowered.arcane.Arcane;
+import com.velocitypowered.arcane.Utilities;
+import com.velocitypowered.arcane.playerController;
+import com.velocitypowered.arcane.playerStats;
 
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.Style;
@@ -27,7 +27,7 @@ public class bookOfHealsItem extends ItemStack{
     Utilities utils = new Utilities();
     playerController playerController = new playerController();
 
-    JavaPlugin plugin = ExtraUtils.getPlugin(ExtraUtils.class);
+    JavaPlugin plugin = Arcane.getPlugin(Arcane.class);
     @SuppressWarnings("FieldCanBeLocal")
     private final int hugeHealRadius = 10;
     private int radius = 1;

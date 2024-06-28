@@ -1,4 +1,4 @@
-package com.velocitypowered.extrautils;
+package com.velocitypowered.arcane;
 
 import net.md_5.bungee.api.ChatMessageType;
 import net.md_5.bungee.api.chat.TextComponent;

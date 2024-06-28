@@ -1,6 +1,6 @@
-package com.velocitypowered.extrautils.collections;
+package com.velocitypowered.arcane.collections;
 
-import com.velocitypowered.extrautils.armor.mageApprenticeArmor;
+import com.velocitypowered.arcane.armor.mageApprenticeArmor;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;

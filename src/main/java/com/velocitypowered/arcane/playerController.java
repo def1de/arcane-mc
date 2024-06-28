@@ -1,6 +1,6 @@
-package com.velocitypowered.extrautils;
+package com.velocitypowered.arcane;
 
-import com.velocitypowered.extrautils.collections.Weapons;
+import com.velocitypowered.arcane.collections.Weapons;
 import org.bukkit.NamespacedKey;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
