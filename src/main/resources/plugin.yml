@@ -6,5 +6,5 @@ load: STARTUP
 author: def1de
 
 commands:
-  extrautils:
+  arcane:
     description: Arcane main command
