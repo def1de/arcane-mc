@@ -9,6 +9,7 @@ com\velocitypowered\arcane\Arcane.class
 com\velocitypowered\arcane\collections\Armor.class
 com\velocitypowered\arcane\weapons\aotvItem.class
 com\velocitypowered\arcane\armor\mageApprenticeArmor.class
+com\velocitypowered\arcane\armor\mageMasterArmor.class
 com\velocitypowered\arcane\playerStats.class
 com\velocitypowered\arcane\tickListener.class
 com\velocitypowered\arcane\weapons\bookOfHealsItem.class
