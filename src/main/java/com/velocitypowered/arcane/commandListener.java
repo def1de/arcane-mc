@@ -10,6 +10,15 @@ import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
 public class commandListener implements CommandExecutor {
+//    @Override
+//    public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, String label, String[] args){
+//        if (sender instanceof Player){
+//            sender.sendMessage("Arcane command listener is working!");
+//            return true;
+//        }
+//        return false;
+//    }
+
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, String label, String[] args) {
         if (label.equalsIgnoreCase("arcane")) {
@@ -41,7 +50,6 @@ public class commandListener implements CommandExecutor {
                 catch (Exception e) {
                     player.sendMessage("Wrong usage! Perhaps you misspell the item ID?");
                     return false;
-
                 }
                 return true;
             }

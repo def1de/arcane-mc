@@ -1,7 +1,7 @@
 package com.velocitypowered.arcane.weapons;
 
 import com.velocitypowered.arcane.Arcane;
-import com.velocitypowered.arcane.Utilities;
+import com.velocitypowered.arcane.utils.text;
 import com.velocitypowered.arcane.playerController;
 import com.velocitypowered.arcane.playerStats;
 
@@ -24,7 +24,7 @@ import java.util.*;
 
 @SuppressWarnings({"FieldCanBeLocal", "unused"})
 public class bookOfHealsItem extends ItemStack{
-    Utilities utils = new Utilities();
+    text utils = new text();
     playerController playerController = new playerController();
 
     JavaPlugin plugin = Arcane.getPlugin(Arcane.class);
@@ -49,7 +49,7 @@ public class bookOfHealsItem extends ItemStack{
         ItemMeta meta = getItemMeta();
         meta.displayName(utils.newText("Book of Health", Style.style(NamedTextColor.DARK_PURPLE)));
 
-        NamespacedKey idKey = new NamespacedKey("extrautils", "id");
+        NamespacedKey idKey = new NamespacedKey("arcane", "id");
         meta.getPersistentDataContainer().set(idKey, org.bukkit.persistence.PersistentDataType.STRING, "BOOK_OF_HEALS");
 
         meta.setCustomModelData(1);

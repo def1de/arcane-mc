@@ -1,6 +1,6 @@
 package com.velocitypowered.arcane.armor;
 
-import com.velocitypowered.arcane.Utilities;
+import com.velocitypowered.arcane.utils.text;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.Style;
@@ -17,7 +17,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import java.util.Arrays;
 
 public class mageApprenticeArmor {
-    Utilities utils = new Utilities();
+    text utils = new text();
     public ItemStack mageApprenticeHelmet() {
         double health = 5;
         double intelligence = 5;
@@ -51,11 +51,11 @@ public class mageApprenticeArmor {
         ItemStack armor = new ItemStack(material);
         ItemMeta meta = armor.getItemMeta();
 
-        NamespacedKey idKey = new NamespacedKey("extrautils", "id");
-        NamespacedKey healthKey = new NamespacedKey("extrautils", "health");
-        NamespacedKey intelligenceKey = new NamespacedKey("extrautils", "intelligence");
-        NamespacedKey abilityDamageKey = new NamespacedKey("extrautils", "ability_damage");
-        NamespacedKey defenseKey = new NamespacedKey("extrautils", "defense");
+        NamespacedKey idKey = new NamespacedKey("arcane", "id");
+        NamespacedKey healthKey = new NamespacedKey("arcane", "health");
+        NamespacedKey intelligenceKey = new NamespacedKey("arcane", "intelligence");
+        NamespacedKey abilityDamageKey = new NamespacedKey("arcane", "ability_damage");
+        NamespacedKey defenseKey = new NamespacedKey("arcane", "defense");
 
         meta.getPersistentDataContainer().set(idKey, org.bukkit.persistence.PersistentDataType.STRING, id);
         meta.getPersistentDataContainer().set(healthKey, org.bukkit.persistence.PersistentDataType.DOUBLE, health);

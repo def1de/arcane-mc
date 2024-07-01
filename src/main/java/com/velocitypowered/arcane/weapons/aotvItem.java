@@ -1,6 +1,6 @@
 package com.velocitypowered.arcane.weapons;
 
-import com.velocitypowered.arcane.Utilities;
+import com.velocitypowered.arcane.utils.text;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.Style;
 import net.kyori.adventure.text.format.TextDecoration;
@@ -18,7 +18,7 @@ import java.util.Collections;
 
 @SuppressWarnings("CallToPrintStackTrace")
 public class aotvItem extends ItemStack {
-    Utilities utils = new Utilities();
+    text utils = new text();
 
     public aotvItem() {
         super(Material.DIAMOND_SHOVEL, 1);
@@ -26,7 +26,7 @@ public class aotvItem extends ItemStack {
         ItemMeta meta = getItemMeta();
         meta.displayName(utils.newText("Aspect of the Void", Style.style(NamedTextColor.LIGHT_PURPLE)));
 
-        NamespacedKey idKey = new NamespacedKey("extrautils", "id");
+        NamespacedKey idKey = new NamespacedKey("arcane", "id");
         meta.getPersistentDataContainer().set(idKey, org.bukkit.persistence.PersistentDataType.STRING, "AOTV");
 
         meta.lore(Collections.singletonList(utils.newText("")));
