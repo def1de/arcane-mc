@@ -32,10 +32,10 @@ public class playerController implements Listener {
 
         for(ItemStack item : armor) {
             if (item != null && item.getItemMeta() != null) {
-                maxHealth += item.getItemMeta().getPersistentDataContainer().getOrDefault(new NamespacedKey("extrautils", "health"), PersistentDataType.DOUBLE, 0.0);
-                maxMana += item.getItemMeta().getPersistentDataContainer().getOrDefault(new NamespacedKey("extrautils", "intelligence"), PersistentDataType.DOUBLE, 0.0);
-                abilityDamage += item.getItemMeta().getPersistentDataContainer().getOrDefault(new NamespacedKey("extrautils", "ability_damage"), PersistentDataType.DOUBLE, 0.0);
-                defense += item.getItemMeta().getPersistentDataContainer().getOrDefault(new NamespacedKey("extrautils", "defense"), PersistentDataType.DOUBLE, 0.0);
+                maxHealth += item.getItemMeta().getPersistentDataContainer().getOrDefault(new NamespacedKey("arcane", "health"), PersistentDataType.DOUBLE, 0.0);
+                maxMana += item.getItemMeta().getPersistentDataContainer().getOrDefault(new NamespacedKey("arcane", "intelligence"), PersistentDataType.DOUBLE, 0.0);
+                abilityDamage += item.getItemMeta().getPersistentDataContainer().getOrDefault(new NamespacedKey("arcane", "ability_damage"), PersistentDataType.DOUBLE, 0.0);
+                defense += item.getItemMeta().getPersistentDataContainer().getOrDefault(new NamespacedKey("arcane", "defense"), PersistentDataType.DOUBLE, 0.0);
             }
         }
 
@@ -89,7 +89,7 @@ public class playerController implements Listener {
         PersistentDataContainer itemContainer = itemInHand.getItemMeta().getPersistentDataContainer();
 
         if(itemContainer.isEmpty()) return;
-        NamespacedKey idKey = new NamespacedKey("extrautils", "id");
+        NamespacedKey idKey = new NamespacedKey("arcane", "id");
         if(!itemInHand.hasItemMeta()) return;
 
         String itemId = itemInHand.getItemMeta().getPersistentDataContainer().get(idKey, PersistentDataType.STRING);

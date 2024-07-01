@@ -17,7 +17,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 import java.util.Arrays;
 
 public class mageApprenticeArmor {
-    text utils = new text();
     public ItemStack mageApprenticeHelmet() {
         double health = 5;
         double intelligence = 5;
@@ -65,15 +64,15 @@ public class mageApprenticeArmor {
 
         meta.displayName(Component.text(name, Style.style(NamedTextColor.BLUE)).decoration(TextDecoration.ITALIC, false));
         meta.lore(Arrays.asList(
-                utils.newText("Health: ", Style.style(NamedTextColor.GRAY)).append(utils.newText(Double.toString(health), Style.style(NamedTextColor.RED))),
-                utils.newText("Intelligence: ", Style.style(NamedTextColor.GRAY)).append(utils.newText(Double.toString(intelligence), Style.style(NamedTextColor.RED))),
-                utils.newText("Ability Damage: ", Style.style(NamedTextColor.GRAY)).append(utils.newText(Double.toString(abilityDamage), Style.style(NamedTextColor.RED))),
-                utils.newText("Defense: ", Style.style(NamedTextColor.GRAY)).append(utils.newText(Double.toString(defense), Style.style(NamedTextColor.RED))),
-                utils.newText(""),
-                utils.newText("An armour obtained by a rookie mage.", Style.style(NamedTextColor.GRAY)),
-                utils.newText("A lot yet to come.", Style.style(NamedTextColor.GRAY)),
-                utils.newText(""),
-                utils.newText("RARE", Style.style(NamedTextColor.BLUE, TextDecoration.BOLD))
+                text.newText("Health: ", Style.style(NamedTextColor.GRAY)).append(text.newText(Double.toString(health), Style.style(NamedTextColor.RED))),
+                text.newText("Intelligence: ", Style.style(NamedTextColor.GRAY)).append(text.newText(Double.toString(intelligence), Style.style(NamedTextColor.RED))),
+                text.newText("Ability Damage: ", Style.style(NamedTextColor.GRAY)).append(text.newText(Double.toString(abilityDamage), Style.style(NamedTextColor.RED))),
+                text.newText("Defense: ", Style.style(NamedTextColor.GRAY)).append(text.newText(Double.toString(defense), Style.style(NamedTextColor.RED))),
+                text.newText(""),
+                text.newText("An armour obtained by a rookie mage.", Style.style(NamedTextColor.GRAY)),
+                text.newText("A lot yet to come.", Style.style(NamedTextColor.GRAY)),
+                text.newText(""),
+                text.newText("RARE", Style.style(NamedTextColor.BLUE, TextDecoration.BOLD))
         ));
         meta.setUnbreakable(true);
         LeatherArmorMeta leatherArmorMeta = (LeatherArmorMeta) meta;

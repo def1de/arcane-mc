@@ -24,7 +24,6 @@ import java.util.*;
 
 @SuppressWarnings({"FieldCanBeLocal", "unused"})
 public class bookOfHealsItem extends ItemStack{
-    text utils = new text();
     playerController playerController = new playerController();
 
     JavaPlugin plugin = Arcane.getPlugin(Arcane.class);
@@ -47,24 +46,24 @@ public class bookOfHealsItem extends ItemStack{
         super(Material.BOOK, 1);
 
         ItemMeta meta = getItemMeta();
-        meta.displayName(utils.newText("Book of Health", Style.style(NamedTextColor.DARK_PURPLE)));
+        meta.displayName(text.newText("Book of Health", Style.style(NamedTextColor.DARK_PURPLE)));
 
         NamespacedKey idKey = new NamespacedKey("arcane", "id");
         meta.getPersistentDataContainer().set(idKey, org.bukkit.persistence.PersistentDataType.STRING, "BOOK_OF_HEALS");
 
         meta.setCustomModelData(1);
         meta.lore(Arrays.asList(
-                utils.newText("Life Drain ", Style.style(NamedTextColor.GOLD)).append(utils.newText("LEFT CLICK ABILITY:", Style.style(NamedTextColor.GOLD, TextDecoration.BOLD) )),
-                utils.newText("Creates a beam that heals you by the percentage of missing health of the first enemy it hits", Style.style(NamedTextColor.GRAY)),
-                utils.newText("Mana cost: ", Style.style(NamedTextColor.GRAY)).append((utils.newText("10", Style.style(NamedTextColor.WHITE))).append(utils.newText(" mana", Style.style(NamedTextColor.GRAY)))),
-                utils.newText("Cooldown: ", Style.style(NamedTextColor.GRAY)).append((utils.newText(""+lifeDrainCooldown, Style.style(NamedTextColor.RED)))).append(utils.newText(" seconds", Style.style(NamedTextColor.GRAY))),
-                utils.newText(" "),
-                utils.newText("Huge Heal ", Style.style(NamedTextColor.GOLD)).append(utils.newText("RIGHT CLICK ABILITY:", Style.style(NamedTextColor.GOLD, TextDecoration.BOLD))),
-                utils.newText("Creates a circle that instantly heals every player within its range by 50% of their health.", Style.style(NamedTextColor.GRAY)),
-                utils.newText("Mana cost: ", Style.style(NamedTextColor.GRAY)).append((utils.newText("75", Style.style(NamedTextColor.WHITE))).append(utils.newText(" mana", Style.style(NamedTextColor.GRAY)))),
-                utils.newText("Cooldown: ", Style.style(NamedTextColor.GRAY)).append((utils.newText(""+hugeHealCooldown, Style.style(NamedTextColor.RED)))).append(utils.newText(" seconds", Style.style(NamedTextColor.GRAY))),
-                utils.newText(" "),
-                utils.newText("EPIC", Style.style(NamedTextColor.DARK_PURPLE, TextDecoration.BOLD))
+                text.newText("Life Drain ", Style.style(NamedTextColor.GOLD)).append(text.newText("LEFT CLICK ABILITY:", Style.style(NamedTextColor.GOLD, TextDecoration.BOLD) )),
+                text.newText("Creates a beam that heals you by the percentage of missing health of the first enemy it hits", Style.style(NamedTextColor.GRAY)),
+                text.newText("Mana cost: ", Style.style(NamedTextColor.GRAY)).append((text.newText("10", Style.style(NamedTextColor.WHITE))).append(text.newText(" mana", Style.style(NamedTextColor.GRAY)))),
+                text.newText("Cooldown: ", Style.style(NamedTextColor.GRAY)).append((text.newText(""+lifeDrainCooldown, Style.style(NamedTextColor.RED)))).append(text.newText(" seconds", Style.style(NamedTextColor.GRAY))),
+                text.newText(" "),
+                text.newText("Huge Heal ", Style.style(NamedTextColor.GOLD)).append(text.newText("RIGHT CLICK ABILITY:", Style.style(NamedTextColor.GOLD, TextDecoration.BOLD))),
+                text.newText("Creates a circle that instantly heals every player within its range by 50% of their health.", Style.style(NamedTextColor.GRAY)),
+                text.newText("Mana cost: ", Style.style(NamedTextColor.GRAY)).append((text.newText("75", Style.style(NamedTextColor.WHITE))).append(text.newText(" mana", Style.style(NamedTextColor.GRAY)))),
+                text.newText("Cooldown: ", Style.style(NamedTextColor.GRAY)).append((text.newText(""+hugeHealCooldown, Style.style(NamedTextColor.RED)))).append(text.newText(" seconds", Style.style(NamedTextColor.GRAY))),
+                text.newText(" "),
+                text.newText("EPIC", Style.style(NamedTextColor.DARK_PURPLE, TextDecoration.BOLD))
         ));
         this.setItemMeta(meta);
     }

@@ -18,24 +18,23 @@ import java.util.Collections;
 
 @SuppressWarnings("CallToPrintStackTrace")
 public class aotvItem extends ItemStack {
-    text utils = new text();
 
     public aotvItem() {
         super(Material.DIAMOND_SHOVEL, 1);
 
         ItemMeta meta = getItemMeta();
-        meta.displayName(utils.newText("Aspect of the Void", Style.style(NamedTextColor.LIGHT_PURPLE)));
+        meta.displayName(text.newText("Aspect of the Void", Style.style(NamedTextColor.LIGHT_PURPLE)));
 
         NamespacedKey idKey = new NamespacedKey("arcane", "id");
         meta.getPersistentDataContainer().set(idKey, org.bukkit.persistence.PersistentDataType.STRING, "AOTV");
 
-        meta.lore(Collections.singletonList(utils.newText("")));
+        meta.lore(Collections.singletonList(text.newText("")));
         meta.lore(Arrays.asList(
-                utils.newText("Teleport ", Style.style(NamedTextColor.GOLD)).append(utils.newText("RIGHT CLICK ABILITY:", Style.style(NamedTextColor.GOLD, TextDecoration.BOLD))),
-                utils.newText("Teleports you 12 blocks in the direction you are looking", Style.style(NamedTextColor.GRAY)),
-                utils.newText("Watch out for fall damage ;)", Style.style(NamedTextColor.GRAY)),
-                utils.newText(" "),
-                utils.newText("UTILITY", Style.style(NamedTextColor.LIGHT_PURPLE, TextDecoration.BOLD))
+                text.newText("Teleport ", Style.style(NamedTextColor.GOLD)).append(text.newText("RIGHT CLICK ABILITY:", Style.style(NamedTextColor.GOLD, TextDecoration.BOLD))),
+                text.newText("Teleports you 12 blocks in the direction you are looking", Style.style(NamedTextColor.GRAY)),
+                text.newText("Watch out for fall damage ;)", Style.style(NamedTextColor.GRAY)),
+                text.newText(" "),
+                text.newText("UTILITY", Style.style(NamedTextColor.LIGHT_PURPLE, TextDecoration.BOLD))
         ));
         meta.setUnbreakable(true);
         this.setItemMeta(meta);

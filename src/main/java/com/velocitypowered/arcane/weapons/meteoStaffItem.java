@@ -23,7 +23,6 @@ import java.util.*;
 
 @SuppressWarnings({"FieldCanBeLocal", "unused"})
 public class meteoStaffItem extends ItemStack{
-    text utils = new text();
     playerController playerController = new playerController();
 
     @SuppressWarnings("FieldCanBeLocal")
@@ -40,7 +39,7 @@ public class meteoStaffItem extends ItemStack{
         super(Material.BLAZE_ROD, 1);
 
         ItemMeta meta = getItemMeta();
-        meta.displayName(utils.newText("Meteo Staff", Style.style(NamedTextColor.GOLD)));
+        meta.displayName(text.newText("Meteo Staff", Style.style(NamedTextColor.GOLD)));
 
         NamespacedKey idKey = new NamespacedKey("arcane", "id");
         meta.getPersistentDataContainer().set(idKey, PersistentDataType.STRING, "METEO_STAFF");
@@ -53,14 +52,14 @@ public class meteoStaffItem extends ItemStack{
 
         meta.setCustomModelData(1);
         meta.lore(Arrays.asList(
-                utils.newText("Fire Zap ", Style.style(NamedTextColor.GOLD)).append(utils.newText("LEFT CLICK ABILITY:", Style.style(NamedTextColor.GOLD, TextDecoration.BOLD) )),
-                utils.newText("Creates a fire beam that damages entities in its path!", Style.style(NamedTextColor.GRAY)),
-                utils.newText(" "),
-                utils.newText("Meteo Strike ", Style.style(NamedTextColor.GOLD)).append(utils.newText("RIGHT CLICK ABILITY:", Style.style(NamedTextColor.GOLD, TextDecoration.BOLD))),
-                utils.newText("Summons a meteor at the targeted location!", Style.style(NamedTextColor.GRAY)),
-                utils.newText("Cooldown: ", Style.style(NamedTextColor.GRAY)).append((utils.newText(""+meteoStrikeCooldown, Style.style(NamedTextColor.RED))).append(utils.newText(" seconds", Style.style(NamedTextColor.GRAY)))),
-                utils.newText(" "),
-                utils.newText("EPIC", Style.style(NamedTextColor.DARK_PURPLE, TextDecoration.BOLD))
+                text.newText("Fire Zap ", Style.style(NamedTextColor.GOLD)).append(text.newText("LEFT CLICK ABILITY:", Style.style(NamedTextColor.GOLD, TextDecoration.BOLD) )),
+                text.newText("Creates a fire beam that damages entities in its path!", Style.style(NamedTextColor.GRAY)),
+                text.newText(" "),
+                text.newText("Meteo Strike ", Style.style(NamedTextColor.GOLD)).append(text.newText("RIGHT CLICK ABILITY:", Style.style(NamedTextColor.GOLD, TextDecoration.BOLD))),
+                text.newText("Summons a meteor at the targeted location!", Style.style(NamedTextColor.GRAY)),
+                text.newText("Cooldown: ", Style.style(NamedTextColor.GRAY)).append((text.newText(""+meteoStrikeCooldown, Style.style(NamedTextColor.RED))).append(text.newText(" seconds", Style.style(NamedTextColor.GRAY)))),
+                text.newText(" "),
+                text.newText("EPIC", Style.style(NamedTextColor.DARK_PURPLE, TextDecoration.BOLD))
         ));
         this.setItemMeta(meta);
     }
