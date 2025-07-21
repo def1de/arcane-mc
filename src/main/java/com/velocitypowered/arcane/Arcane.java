@@ -23,7 +23,7 @@ public final class Arcane extends JavaPlugin {
             armor.initializeActions(this);
         }
 
-        getCommand("extrautils").setExecutor(new commandListener());
+        getCommand("arcane").setExecutor(new commandListener());
 
         getServer().getPluginManager().registerEvents(new playerController(), this);
 

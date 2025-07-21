@@ -86,6 +86,7 @@ public class mageMasterArmor {
     public void helmetCraftRecipe(JavaPlugin plugin) {
         ItemStack helmet = mageMasterHelmet();
         NamespacedKey key = new NamespacedKey(plugin, "RECIPE_MAGE_APPRENTICE_HELMET");
+        Bukkit.removeRecipe(key);
         ShapedRecipe recipe = new ShapedRecipe(key, helmet);
 
         recipe.shape("CBC", "CAC", "   ");
@@ -99,6 +100,7 @@ public class mageMasterArmor {
     public void chestplateCraftRecipe(JavaPlugin plugin) {
         ItemStack chestplate = mageMasterChestplate();
         NamespacedKey key = new NamespacedKey(plugin, "RECIPE_MAGE_APPRENTICE_CHESTPLATE");
+        Bukkit.removeRecipe(key);
         ShapedRecipe recipe = new ShapedRecipe(key, chestplate);
 
         recipe.shape("CAC", "CBC", "CBC");
@@ -112,6 +114,7 @@ public class mageMasterArmor {
     public void leggingsCraftRecipe(JavaPlugin plugin) {
         ItemStack leggings = mageMasterLeggings();
         NamespacedKey key = new NamespacedKey(plugin, "RECIPE_MAGE_APPRENTICE_LEGGINGS");
+        Bukkit.removeRecipe(key);
         ShapedRecipe recipe = new ShapedRecipe(key, leggings);
 
         recipe.shape("CBC", "CAC", "C C");
@@ -125,6 +128,7 @@ public class mageMasterArmor {
     public void bootsCraftRecipe(JavaPlugin plugin) {
         ItemStack boots = mageMasterBoots();
         NamespacedKey key = new NamespacedKey(plugin, "RECIPE_MAGE_APPRENTICE_BOOTS");
+        Bukkit.removeRecipe(key);
         ShapedRecipe recipe = new ShapedRecipe(key, boots);
 
         recipe.shape("   ", "CAC", "B B");
